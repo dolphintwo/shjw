@@ -1,0 +1,4 @@
+INSERT INTO `dede_search_keywords` VALUES('1','sdfs','sdfs','2','0','1463289454','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','似懂非懂是','似懂非懂是 似懂非懂','1','0','1463289727','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','加宽型琉璃瓦压瓦机设备','加宽型琉璃瓦压瓦机设备 加宽型 压瓦机 琉璃瓦 设备','1','0','1463297843','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','加宽','加宽','1','0','1463297855','0','0');

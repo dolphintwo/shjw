@@ -1,0 +1,93 @@
+<div class="header">
+  <div class="h_mid_c">
+    <div class="h_mid">
+      <div class="logo"> <a href="/" title="{dede:global.cfg_webname/}"> <img src="/skin/images/0013920_03.png" alt="{dede:global.cfg_webname/}" /> </a> </div>
+      <div class="head_rtel">4000-96877</div>
+    </div>
+    <div class="c"></div>
+  </div>
+  <div class="nav_c">
+    <div class="nav">
+      <ul>
+        <li> <a href="/" title="网站首页">网站首页</a> </li>
+        {dede:channelartlist typeid='top'}
+        <li> <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a>
+          <div class="nav_dd dn"> {dede:channel type='son' noself='yes'} <a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a> {/dede:channel} </div>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+    </div>
+  </div>
+  <!-- 导航 end--> 
+</div>
+<!-- banner -->
+<div class="child_top"><a href="javascript:;" target="_self" title="banner2" class="random_pic"><img src="/skin/images/b1.jpg" alt="banner2" width="1600" height="295"></a></div>
+<!-- banner -->
+<div class="noticefra">
+  <div class="notice">
+    <div class="search">
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="hidden" name="typeid" value="1">
+        <label class="index_sname">整站搜索：</label>
+        <input type="text" name="q" id="q" value="请输入关键词" onfocus="if(value!='') {value=''}" onblur="if (value=='') {value='请输入关键词'}" class="text" placeholder="请输入关键词" />
+        <div class="select">
+          <select id="nochongf" name="nochongf">
+            
+            
+            
+            
+            
+            
+            {dede:channelartlist typeid='top' }
+          {dede:type}  
+            
+            
+            
+            
+            
+            
+            <option value='[field:id/]' >[field:typename/]</option>
+            
+            
+            
+            
+            
+            
+            {/dede:type} 
+          {/dede:channelartlist} 
+             
+          
+          
+          
+          
+          
+          </select>
+        </div>
+        <input type="submit" title="" class="button" value=""/>
+      </form>
+      <script type=text/javascript>
+                                    jQuery(document).ready(function() {
+                                        jQuery("#nochongf").selectbox();
+                                    });
+                                </script> 
+    </div>
+    <div class="noticecon">
+      <label class="index_sname">网站公告：</label>
+      <div class="demopage">
+        <div class="control"><a href="javascript:void(0);" id="goD"><img src="/skin/images/indexright.gif" width="7" height="9" /></a></div>
+        <div id="marquee2">
+          <ul>
+            {dede:arclist typeid='11' row='3' titlelen='50' orderby='pubdate'}
+            <li><a target="_parent" href="[field:arcurl/]" title="[field:title/]"><span>[field:title/]</span>
+              <label> [field:pubdate function="MyDate('Y-m-d',@me)"/]</label>
+              </a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        <div class="control"><a href="javascript:void(0);" id="goU"><img src="/skin/images/top2.jpg" width="11" height="16" /></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banner --> 

@@ -1,0 +1,1 @@
+<a class=" animated an5" href="[field:typelink/]" title="查看更多">查看更多</a>

@@ -1,0 +1,1 @@
+<li class="la2"> <a href="list.php?tid=[field:id/]"> <strong class=" iconfont1_ys  "><span>[field:typename/]</span></strong> </a> </li>
